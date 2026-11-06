@@ -1,0 +1,125 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F4E9D3;
+    color: #0F372F;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+.font-serif-academic {
+  font-family: 'Source Serif 4', Georgia, Cambria, serif;
+}
+
+.font-mono-tabular {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Storm Green & Luscious Lemon custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4E9D3;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0F372F;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ECBC6B;
+}
+
+/* Reading text formatting — Storm Green (#0F372F) */
+.telc-reading-prose p {
+  margin-bottom: 1.05rem;
+  line-height: 1.72;
+  text-align: left;
+  color: #0F372F;
+}
+
+/* Deuropa Sprachbausteine Inline Gap Badge — Storm Green (#0F372F) & Luscious Lemon (#ECBC6B) */
+.deuropa-sp-gap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.1rem;
+  padding: 0.1rem 0.55rem;
+  margin: 0 0.2rem;
+  border-radius: 0.35rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  background-color: #0F372F;
+  color: #ECBC6B;
+  border: 1.5px solid #0F372F;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  vertical-align: baseline;
+  box-shadow: 0 1px 2px rgba(15, 55, 47, 0.25);
+}
+
+.deuropa-sp-gap:hover {
+  background-color: #ECBC6B;
+  color: #0F372F;
+  border-color: #0F372F;
+  transform: translateY(-1px);
+}
+
+.deuropa-sp-gap.gap-active {
+  background-color: #ECBC6B;
+  color: #0F372F;
+  border-color: #0F372F;
+  box-shadow: 0 0 0 3px rgba(236, 188, 107, 0.55);
+}
+
+.deuropa-sp-gap.gap-answered {
+  background-color: #0F372F;
+  color: #ECBC6B;
+  border-color: #ECBC6B;
+}
+
+.deuropa-sp-gap.gap-correct {
+  background-color: #0F372F;
+  border-color: #ECBC6B;
+  color: #ECBC6B;
+}
+
+.deuropa-sp-gap.gap-wrong {
+  background-color: #ECBC6B;
+  border-color: #0F372F;
+  color: #0F372F;
+}
+
+/* Text Highlighter classes */
+mark.hl-yellow {
+  background-color: #ECBC6B;
+  color: #0F372F;
+  padding: 0.05rem 0.15rem;
+  border-radius: 0.2rem;
+}
+
+mark.hl-green {
+  background-color: #0F372F;
+  color: #ECBC6B;
+  padding: 0.05rem 0.15rem;
+  border-radius: 0.2rem;
+}
+
+mark.hl-blue {
+  background-color: #F4E9D3;
+  color: #0F372F;
+  padding: 0.05rem 0.15rem;
+  border-radius: 0.2rem;
+}

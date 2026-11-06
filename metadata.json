@@ -1,0 +1,6 @@
+{
+  "name": "telc Deutsch C1 Hochschule Digital Simulator",
+  "description": "Offizieller telc Deutsch C1 Hochschule Prüfungs-Simulator mit allen 15 Original-Varianten (Leseverstehen, Sprachbausteine, Hörverstehen, Schriftlicher Ausdruck), S30-Antwortbogen und KI-Prüfungscoach.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
